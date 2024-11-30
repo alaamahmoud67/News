@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.slick-next {
+display: none !important;
+ 
+
+}
+.bg-2{
+  background-image: url('../src/assets/img-2.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.bg-1{
+  background-image: url('../src/assets/img-1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.bg-3{
+  background-image: url('../src/assets/img-3.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.slick-dots{
+  display: none !important;
+
+}
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+  background: #000;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important; 
+  height: 40px !important; 
+  color: white !important; 
+  background-color: #12223b !important; 
+  border-radius: 50%;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+
+  z-index: 10; 
+}
+
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important; 
+}
+/* استعلامات الوسائط لتقليل حجم الأزرار في الشاشات الأصغر */
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 30px !important; 
+    height: 30px !important; 
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 16px !important; 
+  }
+}
+
+@media (max-width: 480px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 25px !important; 
+    height: 25px !important; 
+  }
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 14px !important; 
+  }
+}
